@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbie Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="loginPage" class="page">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Enter Username" required>
+    <button onclick="login()">Start Quiz</button>
+  </div>
+
+  <div id="quizPage" class="page hidden">
+    <h2 id="greeting"></h2>
+    <div id="quizContainer">
+      <p id="question"></p>
+      <div id="options"></div>
+    </div>
+    <button onclick="nextQuestion()">Next Question</button>
+  </div>
+
+  <div id="resultPage" class="page hidden">
+    <h2>Quiz Completed!</h2>
+    <p id="score"></p>
+    <button onclick="restartQuiz()">Try Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
